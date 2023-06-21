@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font-family:<글꼴 이름> | [<글꼴 이름>,<글꼴 이름>] */
+        body {
+            font-family: "맑은 고딕", 돋움 , 굴림;
+        }
+        div {
+            font-style: normal;
+            font-style: italic;
+            font-style: oblique;
+            font-weight: lighter;
+        /* normal bold bolder 100~900 */
+
+        @font-face {
+            font-family: <글꼴 이름>;
+            src: <글꼴 파일>[<글꼴 파일>,<글꼴 파일>,]url();
+        }
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            font-family: 'Nanum pen Script', cursive;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+pen+Script&dis-play-swap');
+
+        /* color: <색상>; */
+
+        }
+
+
+        h2{
+            color: rgb(0, 0, 255);
+        }
+
+        h3 {
+            color: rgb(0, 0, 255, 0.5);
+        }
+
+        h4 {
+            text-align: center;
+            /* start end left fight center justify match-parnet */
+        }
+        
+        ul {
+            list-style-type: none;
+            list-style: none;
+        }
+
+        ol {
+            list-style-type: lower-alpha;
+            list-style-position: inside;
+
+            list-style: lower-alpha inside;
+        }
+
+    </style>
+</head>
+<body>
+    <p> font-size: 값1 | 값2 | 값3 </p>
+    <p> font-variant: normal | small-caps </p>
+    <p> font-size: <절대 크기> | <상대 크기> | <크기> | <백분율> </p>
+    <p> font: <font-style> <font-variant> <font-weight> </p>
+        <p> font-size: <절대 크기> <!--브라우저에서 지정한 글자 크기 --> | <상대 크기> <!-- 부모요소의 글자 크기기준으로 상대적인 글자 크기를 지정  --> | <크기> <!-- 브라우저와 상관없이 글자 크기를 직접 지정 --> | <백분율> <!-- 부모 요소의 글자 크기를 기준으로 백분율로표시 --> </p>
+        <div>
+            <p>xx-small < x-small < small < medium < large < x-large < xx-large </p>
+        </div>
+        <p font-size: 12px; line-hight: 24px;  ></p>
+        <p font-size: 12px; line-hight: 2.0;></p>
+        <p font-size: 12px; line-hight: 200%;></p>
+</body>
+</html>
